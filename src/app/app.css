@@ -55,7 +55,7 @@
 #userImg{
 
 }
-#userName p, category{
+#userName p, #category{
   font-weight: 900;
   line-height: 150%;
   font-size: 14px;
