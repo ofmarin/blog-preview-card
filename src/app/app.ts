@@ -8,5 +8,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
+
+  banner : string = "./images/illustration-article.svg";
+  user : string = "./images/image-avatar.webp";
   protected readonly title = signal('blog-preview-card');
 }
