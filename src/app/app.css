@@ -4,23 +4,26 @@
   font-weight: 300 900;
   font-style:normal;
 }
-
+@font-face{
+  font-family: "Figtree-extra";
+  src:url("/fonts/static/Figtree-ExtraBold.ttf") format("truetype-variations");
+  font-weight: 300 900;
+  font-style:normal;
+}
 .attribution { font-size: 0.6875rem; text-align: center; margin-top: 1em; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
 .main{
   display: flex;
   flex-direction: column;
   border: 1px solid hsl(228, 45%, 44%);
   box-shadow: 10px 10px;
-  max-width: fit-content;
+  max-width: 75%;
   height: auto;
   border-radius: 20px;
   background: white;
   margin:0px;
   padding:24px;
 }
-
 :host {
   display: flex;
   flex-direction: column;
@@ -35,18 +38,22 @@
   align-items:center;
   flex-direction: column;
   margin:0px;
+  width: fit-content;
 }
-
+#banner img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 #category{
   align-self: flex-start;
   padding-top: 0.5em;
   background-color: #F4D04E;
 }
-
 #userImg{
 
 }
-
 #userName p, category{
   font-weight: 900;
   line-height: 150%;
@@ -55,41 +62,33 @@
   font-style: normal;
   letter-spacing: 0px;
 }
-
 #userName p{
   align-content: center;
 }
-
 #userName p, #userImg{
   margin: 0;
 }
-
 #userImg img{
   margin: 0;
   width:32px;
   height:32px;
 }
-
 #userName{
   display: flex;
   justify-content: start;
   align-content: center;
   gap: 12px;
   max-width: fit-content;
+  margin-top:24px;
 }
-
-#banner img{
-  display: block;
-  max-width: fit-content;
-  height: auto;
-  border-radius: 10px;
-}
-
 #content{
+  display: flex;
+  flex-direction: column;
   max-width: fit-content;
-  box-sizing: content-box;
-}
+  align-items: flex-start;
+  gap:12px;
 
+}
 #date{
   width: fit-content;
 }
@@ -97,25 +96,34 @@
   width: fit-content;
 }
 #title{
-  font-family: "Figtree", sans-serif !important ;
+  font-family: "Figtree";
   font-size: 24px;
   font-weight:900;
   font-style: normal;
   line-height: 150%;
   letter-spacing: 0px;
   max-width: fit-content;
+  padding:0;
+  filter:drop-shadow(0 0px 4px #00000040);
 }
-
+#title:hover{
+  color: #F4D04E;
+  cursor: url("/images/Pointer.png"), pointer;
+}
 #description{
   font-family: "Figtree" ;
   font-style: normal;
   font-weight:500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 150%;
-  max-width: 50%;
+  max-width: 336px;
   color:#6B6B6B;
+  flex-wrap: wrap;
+  text-align: left;
 }
-
+div:has(#description){
+  padding-right:5px;
+}
 #date{
   font-family: "Figtree" ;
   font-style: normal;
@@ -123,7 +131,6 @@
   font-size: 16px;
   line-height: 150%;
 }
-
 #category{
   max-width: fit-content;
   font-family: "Figtree", sans-serif;
@@ -136,6 +143,12 @@
   margin-top:24px;
   filter: drop-shadow(0px 4px 4px #00000040);
 }
+p, h1{
+  margin:0;
+  padding:0;
+}
+
+
 
 
 
