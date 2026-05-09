@@ -17,7 +17,7 @@
   flex-direction: column;
   border: 1px solid hsl(228, 45%, 44%);
   box-shadow: 10px 10px;
-  max-width: 70%;
+  max-width: clamp(9rem, 70%, 20rem);
   height: auto;
   border-radius: 20px;
   background: white;
@@ -114,12 +114,16 @@
   font-family: "Figtree" ;
   font-style: normal;
   font-weight:500;
-  font-size: 16px;
+  font-size: clamp(14px, 3.85vw, 16px);
   line-height: 150%;
   max-width: 336px;
   color:#6B6B6B;
   flex-wrap: wrap;
   text-align: left;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
 }
 div:has(#description){
   padding-right:5px;
