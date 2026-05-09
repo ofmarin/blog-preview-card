@@ -43,7 +43,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ofmarin/qr-code-component/)
+- Solution URL: [Add solution URL here](https://github.com/ofmarin/blog-preview-card)
 - Live Site URL: [Add live site URL here](https://ofmarin.github.io/blog-preview-card/)
 
 ## My process
