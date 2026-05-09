@@ -1,14 +1,15 @@
-@font-face{
+@font-face {
   font-family: "Figtree";
-  src:url("/public/fonts/Figtree-VariableFont_wght.ttf") format("truetype-variations");
-  font-weight: 300 900;
-  font-style:normal;
+  /* Remove "/public" from the start */
+  src: url("/fonts/Figtree-VariableFont_wght.ttf") format("truetype-variations");
+  font-style: normal;
 }
-@font-face{
+
+@font-face {
   font-family: "Figtree-extra";
-  src:url("/public/fonts/static/Figtree-ExtraBold.ttf") format("truetype-variations");
-  font-weight: 300 900;
-  font-style:normal;
+  /* Remove "/public" from the start */
+  src: url("/fonts/static/Figtree-ExtraBold.ttf") format("truetype-variations");
+  font-style: normal;
 }
 .attribution { font-size: 0.6875rem; text-align: center; margin-top: 1em; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -96,9 +97,8 @@
   width: fit-content;
 }
 #title{
-  font-family: "Figtree";
+  font-family: "Figtree-extra";
   font-size: 24px;
-  font-weight:900;
   font-style: normal;
   line-height: 150%;
   letter-spacing: 0px;
@@ -147,10 +147,13 @@ div:has(#description){
   margin-top:24px;
   filter: drop-shadow(0px 4px 4px #00000040);
 }
+
 p, h1{
   margin:0;
   padding:0;
 }
+
+
 
 
 
